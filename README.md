@@ -1,6 +1,8 @@
 **Dataset**
+
 Original source: https://www.kaggle.com/datasets/utsh0dey/25k-movie-dataset
-Cleaned data provided in repository. 
+
+The cleaned data is provided for you in this repository.
 
 **Setup**
 1. Install Python 3.11.9.
