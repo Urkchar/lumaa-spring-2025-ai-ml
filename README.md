@@ -10,6 +10,8 @@ The cleaned data is provided for you in this repository.
 3. Clone this repository.
 ```
 git clone https://github.com/Urkchar/lumaa-spring-2025-ai-ml.git
+```
+```
 cd lumaa-spring-2025-ai-ml
 ```
 4. Create a virtual environment.
