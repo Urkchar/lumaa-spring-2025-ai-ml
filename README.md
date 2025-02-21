@@ -6,23 +6,32 @@ The cleaned data is provided for you in this repository.
 
 **Setup**
 1. Install Python 3.11.9.
-2. Clone this repository.
-3. Create a virtual environment.
-
-    a. CTRL + SHIFT + P to open Command Pallete in Visual Studio Code.
-
-    b. Type "Python: Create Environment" and select that item from the results.
-
-    c. Select "Venv"
-
-    d. Select your Python 3.11.9 installation.
-
-    e. Check the box to install dependencies using requirements.txt. Click OK. 
+2. Install git.
+3. Clone this repository.
+```
+git clone https://github.com/Urkchar/lumaa-spring-2025-ai-ml.git
+cd lumaa-spring-2025-ai-ml
+```
+4. Create a virtual environment.
+```
+python -m venv myenv
+```
+5. Activate your virtual environment.
+```
+myenv\Scripts\activate
+```
+6. Install dependencies.
+```
+pip install -r requirements.txt
+```
 
 **Running**
 1. Open a Command Prompt in the folder that contains this repository.
-2. Type ".venv\Scripts\activate" to activate your virtual environment.
-3. Type "python main.py"
+2. Activate your virtual environment (if inactive).
+```
+myenv\Scripts\activate
+```
+3. Type "python main.py".
 4. Follow the on-screen instructions by typing a short description of your movie preferences and press ENTER. 
 
 **Results**
