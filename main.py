@@ -12,13 +12,13 @@ df = pd.read_csv("data.csv")
 
 # Clean data
 user_input = re.sub(r"[^\w\s]", "", user_input).lower()
-df["Plot"] = df["Plot"].apply(lambda x: re.sub(r"[^\w\s]", "", x).lower())
+df["Keywords"] = df["Keywords"].apply(lambda x: re.sub(r"[^\w\s]", "", x).lower())
 # print(df.shape)
 # print(df.head())
 
 # Set up vectorizer
 vectorizer = TfidfVectorizer(stop_words="english")
-tfidf_matrix = vectorizer.fit_transform(df["Plot"])
+tfidf_matrix = vectorizer.fit_transform(df["Keywords"])
 user_vector = vectorizer.transform([user_input])
 # print(f"tfidf_matrix.shape: {tfidf_matrix.shape}")
 
@@ -52,7 +52,8 @@ top_n_indices = np.argsort(similarities[0])[-n:][::-1]
 top_n_similarities = similarities[0][top_n_indices]
 # print(top_5_movies)
 top_n_titles = df.iloc[top_n_indices]["Title"].values
-top_n_years = df.iloc[top_n_indices]["Release Year"].values
+top_n_years = df.iloc[top_n_indices]["Year"].values
 # print(top_5_titles)
 for title, score, year in zip(top_n_titles, top_n_similarities, top_n_years):
+    # print(type(year))
     print(f"{round(score * 100)}/100 - {title} ({year})")
