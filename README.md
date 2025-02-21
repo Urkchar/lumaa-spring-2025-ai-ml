@@ -17,13 +17,13 @@ The cleaned data is provided for you in this repository.
 
     d. Select your Python 3.11.9 installation.
 
-4. Open a Command Prompt in the folder that contains this repository. 
-5. Type "pip install -r requirements.txt"
+    e. Check the box to install dependencies using requirements.txt. Click OK. 
 
 **Running**
-1. Open a Command Prompt in the folder that contains this repository. 
-2. Type "python main.py"
-3. Follow the on-screen instructions by typing a short description of your movie preferences and press ENTER. 
+1. Open a Command Prompt in the folder that contains this repository.
+2. Type ".venv\Scripts\activate" to activate your virtual environment.
+3. Type "python main.py"
+4. Follow the on-screen instructions by typing a short description of your movie preferences and press ENTER. 
 
 **Results**
 
