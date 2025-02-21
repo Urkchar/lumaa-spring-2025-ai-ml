@@ -6,10 +6,14 @@ Cleaned data provided in repository.
 1. Install Python 3.11.9.
 2. Clone this repository.
 3. Create a virtual environment.
-    3a. CTRL + SHIFT + P to open Command Pallete in Visual Studio Code.
-    3b. Type "Python: Create Environment" and select that item from the results.
-    3c. Select "Venv"
-    3d. Select your Python 3.11.9 installation.
+    a. CTRL + SHIFT + P to open Command Pallete in Visual Studio Code.
+
+    b. Type "Python: Create Environment" and select that item from the results.
+
+    c. Select "Venv"
+
+    d. Select your Python 3.11.9 installation.
+    
 4. Open a Command Prompt in the folder that contains this repository. 
 5. Type "pip install -r requirements.txt"
 
